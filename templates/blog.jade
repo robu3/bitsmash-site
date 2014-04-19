@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	- var articles = env.helpers.getArticles(contents)
+	- var i = 0
+	include author
+	each article in articles
+		if !article.metadata.ignore
+			- i++
+			article.article.intro
+				header
+					p.date
+						span= moment.utc(article.date).format('MM.DD.YYYY')
+					h2
+						a(href=article.url)= article.title
+				section.content
+					| !{ typogr(article.intro).typogrify() }
+					if article.hasMore
+						p.more
+							a(href=article.url) more
+		if i == 3
+			- break
+
+block prepend footer
+	div.nav
+		a(href='/archive.html') « Archives
+		a(href='/') Home »
+

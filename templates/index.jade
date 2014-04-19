@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	include author
+	each article in articles
+		// metadata gets the article's yaml front-matter
+		if article.metadata.home
+			article.article
+				section.content!= typogr(article.html).typogrify()

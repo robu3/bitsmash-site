@@ -1,0 +1,11 @@
+# ignore build folder
+build
+
+# ignore vim swap files
+*.swp
+
+# osx system files
+*.ds_store
+
+# npm modules
+node_modules
