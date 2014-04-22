@@ -16,4 +16,4 @@ Welcome to BITSMASH Studios! We are a small, independent software development st
 - Express
 - Processing
 
-We have just opened up shop, and are still working on adding new content to this site. In the meantime, please feel free to browse the [blog](../../blog/).
+We have just opened up shop, and are still working on adding new content to this site. In the meantime, please feel free to browse the [blog](../blog/).

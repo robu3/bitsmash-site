@@ -2,7 +2,7 @@
   "locals": {
     "url": "http://localhost:8080",
     "name": "BITSMASH Studios",
-    "owner": "Robert Mitchell",
+    "owner": "BITSMASH Studios, LLC",
     "description": "Smashing and mashing bits since 2014."
   },
   "plugins": [
