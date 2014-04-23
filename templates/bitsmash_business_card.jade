@@ -1,0 +1,42 @@
+extends layout
+
+block append vars
+	- bodyclass = 'article-detail'
+
+block prepend title
+	| #{ page.title + " - "}
+
+block append head
+	script(src=locals.url + "/scripts/bitsmash_logo/bitsmash_business_card_generator.js")
+
+
+block header
+	include author
+	h1= page.title
+
+block content
+	article.article
+		section.content!= typogr(page.html).typogrify()
+	div#business_card_generator
+		div.inputs
+			label(for="") Name
+			input#name(type="input" value="Bit Smashington")
+			br
+			label(for="") Value
+			input#seed_text(type="input" value="Bit Smashington")
+			br
+			label(for="") Angle
+			input#angle(type="input" value="170")
+			br
+			label (whole degrees, blank for random)
+			button#generate_button Generate
+		div.text
+			h1 BITSMASH Studios
+			h2 BITSMASH Studios, LLC
+		div.canvas_wrapper
+			canvas#bitsmash_business_card_logo(data-processing-sources=locals.url + "/scripts/bitsmash_logo/bitsmashjs.pde")
+
+block prepend footer
+	div.nav
+		a(href=contents.index.url + "blog/") « Blog
+		a(href='/') Home »

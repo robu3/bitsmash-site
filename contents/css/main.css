@@ -16,12 +16,17 @@ body {
   margin: 0 auto;
 }
 
-body, a {
+body {
   color: #171717;
 }
 
+a {
+	text-decoration: none;
+	color: #FF00FF;
+}
+
 a:hover {
-  color: #ff8000;
+  color: #00FFFF;
   text-decoration: underline;
 }
 
@@ -461,6 +466,8 @@ code.lang-markdown .bullet {
 #bitsmash_logo_text h1 {
 	text-align: left;
 	font-size: 100px;
+	font-style: normal;
+	font-weight: 700;
 }
 
 #bitsmash_logo_text h2 {
@@ -469,4 +476,29 @@ code.lang-markdown .bullet {
 	margin-bottom: 0px;
 	line-height: 1;
 	margin-top: -27px;
+}
+
+#business_card_generator {
+	position: relative;
+}
+
+#business_card_generator .text {
+	position: absolute;
+	top: 260px;
+}
+
+#business_card_generator h1 {
+	font-size: 65px;
+	margin-bottom: 0em;
+}
+
+#business_card_generator h2 {
+	font-size: 45px;
+	font-weight: 400;
+	margin-bottom: 1.35em;
+}
+
+#business_card_generator label {
+	display: inline-block;
+	width: 250px;
 }

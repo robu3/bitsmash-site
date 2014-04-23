@@ -9,6 +9,8 @@ I was sitting in a co-working space in Kobe, Japan, when I decided to listen to 
 
 <span class="more"></span>
 
+![coworking space](coworking.JPG)
+
  It turns out that they are blocking requests from Japanese IP addresses (or more correctly, redirecting them to their text content site [daily.songza.com](http://daily.songza.com/), which is not bad, just not what I wanted at the time). It turns out that this is common practice for internet music sites, as I was unable to use all of the following:
 
 - Songza
@@ -27,4 +29,4 @@ This is the little Node module I ended up writing. It is a __very__ basic proxy 
 
 The last two items I added just for fun (^_^)v
 
-I made the source available over at [github](https://github.com/robu3/purokishi), in case any one is interested.
+I made the source available over at [github](https://github.com/robu3/purokishi), in case anyone is interested.
