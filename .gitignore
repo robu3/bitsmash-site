@@ -9,3 +9,5 @@ build
 
 # npm modules
 node_modules
+
+.sass-cache
