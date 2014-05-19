@@ -5,7 +5,7 @@ block content
 	- var i = 0
 	include author
 	each article in articles
-		if !article.metadata.ignore
+		if article.metadata.isProject
 			- i++
 			article.article.intro
 				header.row

@@ -502,3 +502,17 @@ code.lang-markdown .bullet {
 	display: inline-block;
 	width: 250px;
 }
+
+.menubar {
+	display: block;
+}
+
+.menubar li {
+	float: left;
+	list-style-type: none;
+	padding: 2em 1em;
+}
+
+.menubar .clear {
+	float: none;
+}

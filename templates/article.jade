@@ -1,23 +1,26 @@
 extends layout
 
 block append vars
-  - bodyclass = 'article-detail'
+	- bodyclass = 'article-detail'
 
 block prepend title
-  | #{ page.title + " - "}
+	| #{ page.title + " - "}
 
 block header
-  include author
-  h1= page.title
-  p.author
-    | #{ "Written by " }
-    mixin author(page.metadata.author)
+	include author
+	div.row
+		h1.large-12.columns.article-title= page.title
+	//div.row
+		p.author.large-12.columns
+			| #{ "Written by " }
+			mixin author(page.metadata.author)
 
 block content
-  article.article
-    section.content!= typogr(page.html).typogrify()
+	div.row
+		article.article.large-12.columns
+			section.content!= typogr(page.html).typogrify()
 
 block prepend footer
-  div.nav
-    a(href=contents.index.url + "blog/") « Blog
-    a(href='/') Home »
+	//div.nav.row
+		a(href=contents.index.url + "blog/").large-6.columns « Blog
+		a(href='/').large-6.columns Home »

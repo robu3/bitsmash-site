@@ -12,31 +12,35 @@ block append head
 
 block header
 	include author
-	h1= page.title
+	div.row
+		h1.large-12.columns.article-title= page.title
 
 block content
-	article.article
-		section.content!= typogr(page.html).typogrify()
-	div#business_card_generator
-		div.inputs
-			label(for="") Name
-			input#name(type="input" value="Bit Smashington")
-			br
-			label(for="") Value
-			input#seed_text(type="input" value="Bit Smashington")
-			br
-			label(for="") Angle
-			input#angle(type="input" value="170")
-			br
-			label (whole degrees, blank for random)
-			button#generate_button Generate
-		div.text
-			h1 BITSMASH Studios
-			h2 BITSMASH Studios, LLC
-		div.canvas_wrapper
-			canvas#bitsmash_business_card_logo(data-processing-sources=locals.url + "/scripts/bitsmash_logo/bitsmashjs.pde")
+	div.row
+		article.article
+			section.content!= typogr(page.html).typogrify()
+		form#business_card_generator
+			div.row
+				div.large-6.columns
+					label(for="") Name
+						input#name(type="text" value="Bit Smashington")
 
-block prepend footer
-	div.nav
-		a(href=contents.index.url + "blog/") « Blog
-		a(href='/') Home »
+			div.row
+				div.large-6.columns
+					label(for="") Value
+						input#seed_text(type="text" value="Bit Smashington")
+
+			div.row
+				div.large-6.columns
+					label(for="") Angle
+						input#angle(type="text" value="170")
+					label (whole degrees, blank for random)
+
+				div.large-6.columns
+					button#generate_button Generate
+
+			div.text
+				h1 BITSMASH Studios
+				h2 BITSMASH Studios, LLC
+			div.canvas_wrapper
+				canvas#bitsmash_business_card_logo(data-processing-sources=locals.url + "/scripts/bitsmash_logo/bitsmashjs.pde")

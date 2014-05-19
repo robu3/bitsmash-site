@@ -28,6 +28,8 @@ function updateLogo() {
 
 	// update the text
 	$("#business_card_generator h1").text(name);
+
+	return false;
 }
 
 $(document).ready(function () {
