@@ -1,0 +1,151 @@
+@import "settings";
+@import "foundation";
+
+h1.article-title {
+	text-align: center;
+	font-style: italic;
+	font-size: 2.5rem;
+}
+
+.content {
+	a:hover {
+		text-decoration: underline;
+	}
+
+	h2 {
+		text-shadow: 2px 2px 1px $secondary-color;
+		line-height: 2em;
+	}
+}
+
+footer {
+	margin-top: 4rem;
+	text-align: center;
+}
+
+header {
+	margin-bottom: 4rem;
+	.description {
+		font-style: italic;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+}
+
+.article.intro {
+	text-align: center;
+	.content p {
+		display: inline;
+	}
+}
+
+.article  {
+	header {
+		margin-top: 4rem;
+		border-top: 1px dashed $secondary-color;
+	}
+
+	.date {
+		margin-top: -.9rem;
+		span {
+			font-size: .8rem;
+			padding: .2rem;
+			background-color: $secondary-color;
+		}
+	}
+
+}
+
+.canvas_wrapper {
+	width: 100%;
+	text-align: center;
+}
+
+#bitsmash_logo {
+	display: inline;
+	height: 400px;
+}
+
+#bitsmash_logo_text_wrapper {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+}
+
+#bitsmash_logo_text {
+	display: inline-block;
+	width: 1000px;
+	text-align: left;
+	padding-left: 80px;
+	padding-top: 80px;
+}
+
+#bitsmash_logo_text h1 {
+	text-align: left;
+	font-size: 100px;
+	font-style: normal;
+	font-weight: 700;
+}
+
+#bitsmash_logo_text h2 {
+	text-align: left;
+	font-size: 88px;
+	margin-bottom: 0px;
+	line-height: 1;
+	margin-top: -27px;
+}
+
+// business card generator
+#business_card_generator {
+	.text {
+		position: absolute;
+		margin-top: 100px;
+	}
+
+	h1 {
+		font-size: 65px;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: 45px;
+	}
+}
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
