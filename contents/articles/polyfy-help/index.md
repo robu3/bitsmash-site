@@ -1,12 +1,12 @@
 ---
-title: Super Polygonal Selfie Help
+title: Polyfy Help
 author: Rob
 date: 2013-05-18
 template: article.jade
 ignore: true
 ---
 
-Thank you for installing Super Polygonal Selfie! If you have found this article, then that probably means that you have figured out that double tapping the left side of the screen opens up the in-app menu, and that tapping the gear icon opens the configuration settings.
+Thank you for installing Polyfy! If you have found this article, then that probably means that you have figured out that double tapping on the screen opens up the in-app menu, and that tapping the gear icon opens the configuration settings.
 
 ## Tutorial
 
@@ -16,16 +16,16 @@ This is how you use Super Polygonal Selfie in a nutshell:
 2. Press the camera button
 3. Picture is saved to your camera roll
 
-But that wouldn't be any fun; the fun part is tweaking the setting and producing mini works of modern art! Try this instead:
+But that wouldn't be any fun; the fun part is tweaking the settings and producing mini works of modern art! Try this instead:
 
 1. Open the app
-2. Double-tap on the lefthand side of the screen to open the menu
-3. Tap the "ON/OFF" button to turn on colorized mode
+2. Double-tap the screen to open the menu
+3. Tap the "ON/OFF" button to turn on/off colorized mode (set it to on for now)
 4. Notice how the colors in the image are shifted to a new palette
 5. Slide the RGB sliders up and down to adjust the colors
 6. Take a picture!
 
-You should be getting a feel for how to use SPS. Now try this:
+You should be getting a feel for how to use Polyfy. Now try this:
 
 1. Open the app
 2. Double-tap on the lefthand side of the screen to open the menu
@@ -37,9 +37,11 @@ You should be getting a feel for how to use SPS. Now try this:
 8. Tap the rotation arrow to activate the front camera
 9. Take a selfie!
 
+Your settings are preserved between sessions, so once you calibrate it to your liking, you can take a series of pictures without having setup everything all over again.
+
 ## Configuration Settings
 
-SPS has a number of configuration settings that control how images are produced:
+Polyfy has a number of configuration settings that control how images are produced:
 
 - __View Mode__: the background drawing mode, which currently consists of the following options:
 	- __Outline__: a simple line drawing of detected edges
